@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天气App</title>
+	 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	 <link rel="stylesheet" href="css/public.css">
+	 <link rel="stylesheet" href="css/weather.css">
+	<!-- 引进js文件 -->
+	 <script src="js/rem.js"></script>
+	 <link rel="icon" href="img/logo.ico" type="image/x-icon">
+</head>
+<body>
+	<!-- 当前信息 -->
+	<section id="now">
+		<!-- 当前城市 -->
+		<h1 class="now_city">
+			<span class="address_icon">&#xe60c;</span>
+			<span class="now_city_name">太原</span>
+		</h1>
+		<!-- 当前空气质量 -->
+		<div class="now_air">
+			<h1>空气</h1>
+			<h2>良</h2>
+		</div>
+		
+		<!-- 当前温度 -->
+		<h2 class="now_temp">
+			<span>-3</span>°
+		</h2>
+
+		<!-- 当前天气 -->
+		<h3 class="now_weather">
+			<span>晴</span>
+		</h3>
+
+		<!-- 当前风级  风向-->
+		<div class="now_wind_box">
+			<span class="now_wind">北风</span>
+			<span class="now_leavel">3</span>级
+		</div>
+		<!-- 问候语 -->
+		<div class="notice">天气冷了,注意保暖~</div>
+	</section>
+		<!-- 未来两天的信息 -->
+	<section id="future">
+		<div class="future_box today">
+			<div class="future_top">
+					<span class="future_date">今天</span>
+					<p><span class="today_hightemp">4</span>/<span class="today_lowtemp">-10</span>°</p>
+			</div>
+
+			<div class="future_top">
+					<span class="today_weather">多云</span>
+					<div class="today_img"><img src="img/1.png" alt=""></div>
+			</div>
+		</div>
+
+			<div class="future_box tomorrow">
+				<div class="future_top">
+					<span class="future_date1">明天</span>
+					<p><span class="tomorrow_hightemp">5</span>/<span class="tomorrow_lowtemp">-7</span>°</p>
+				</div>
+
+				<div class="future_top">
+					<span class="tomorrow_weather">多云</span>
+					<div class="tomorrow_img"><img src="img/1.png" alt=""></div>
+				</div>
+
+			</div>
+		</section>
+		<!--未来24小时天气 -->
+		<ul id="hours">
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+
+			<li>
+				<h1 class="hours_time">8:00</h1>
+				<div class="hours_img"><img src="img/10.png" alt=""></div>
+				<h2 class="hours_temp"><span>-8</span>°</h2>
+			</li>
+		</ul>
+		<!-- 未来一周天气 -->
+		<ul id="week">
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+
+			</li>
+
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+
+			</li>
+
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+			</li>
+			
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+			</li>
+
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+			</li>
+
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+			</li>
+
+			<li class="week_day">
+				<p><span  class="week_day_month">02</span>/<span class="week_day_day">06</span>
+				</p>
+				
+				<h1 class="week_weather">多云转晴</h1>
+
+				<div class="week_img"><img src="img/16.png" alt=""></div>
+
+				<h1 class="week_hightemp">4</h1>
+				<h1 class="week_lowtemp">-14</h1>
+				<h2 class="week_wind">西北风</h2>
+				<h3 class="week_leavel">3级</h3>
+			</li>
+		</ul>
+		<!-- 城市列表 -->
+		<!-- <main  id="citys">
+			<header>
+				<input type="text" class="search" placeholder="请输入搜索内容">
+				<h2 class="btn">取消</h2>
+			</header>
+			
+			<section class="citys_remen">
+				<div class="citys_remen_item">
+					<div class="citys_remen_top">
+						<h1>热门城市</h1>
+					</div>
+					<div class="citys_remen_btm1">
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+					</div>
+					
+				</div>	
+				
+				<div class="citys_guizhou_item">
+					<div class="citys_guizhou_top">
+						<h1>贵州</h1>
+					</div>
+					<div class="citys_guizhou_btm1">
+						<div class="citys_guizhou_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_guizhou_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_guizhou_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_remen_btm">
+							<span>太原</span>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="citys_henan_item">
+					<div class="citys_guizhou_top">
+						<h1>河南</h1>
+					</div>
+					<div class="citys_henan_btm1">
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+
+						<div class="citys_henan_btm">
+							<span>太原</span>
+						</div>
+					</div>
+					
+				</div>
+
+
+
+
+
+
+
+
+
+			</section>
+		</main> -->
+
+</body>
+</html>			

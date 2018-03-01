@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 561408 */
+  src: url('https://at.alicdn.com/t/font_561408_7nfuuw9j11exw29.eot');
+  src: url('https://at.alicdn.com/t/font_561408_7nfuuw9j11exw29.eot?#iefix') format('embedded-opentype'),
+  url('https://at.alicdn.com/t/font_561408_7nfuuw9j11exw29.woff') format('woff'),
+  url('https://at.alicdn.com/t/font_561408_7nfuuw9j11exw29.ttf') format('truetype'),
+  url('https://at.alicdn.com/t/font_561408_7nfuuw9j11exw29.svg#iconfont') format('svg');
+}
+#now{
+	width: 100%;
+	height: 13.8rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3CBFFF,#45E3FF);
+	background-repeat: no-repeat;
+	background-size: 100% ;
+	background-position: bottom center;
+	position: relative;
+
+}
+body{
+	font-size: 12px;
+	background-color: #f5f5f5;
+}
+.now_city{
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.57rem;
+}
+.now_air{
+	width: 2.10rem;
+	height: 1.26rem;
+	background-color: #F1AB62;
+	margin-left: 0.26rem;
+	margin-top: 0.05rem;
+	border-radius: 0.25rem;
+	padding-top: 0.31rem;
+}
+.now_air h1,h2{
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+}
+.address_icon{
+	font-family: 'iconfont';
+}
+.now_temp{
+	font-size: 0.96rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.77rem;
+	line-height: 0.96rem;
+}
+.now_weather{
+	font-size: 0.51rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.91rem;
+	line-height: 0.51rem;
+}
+.now_wind_box {
+	font-size: 0.31rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 0.54rem;
+	line-height: 0.31rem;
+}
+.notice{
+	font-size: 0.32rem;
+	color: #fff;
+	text-align: center;
+	margin-top: 1.48rem;
+	line-height: 0.32rem;
+}
+#future{
+	width: 100%;
+	height: 3.09rem;
+	background-color: #fff;
+	border-bottom: 0.03rem solid #e4e4e4;
+	padding: .72rem .58rem;
+}
+.future_box{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0 0.58rem;
+	font-size: .32rem;
+}
+.today{
+		border-right: 0.03rem solid #e4e4e4;
+}
+.future_top{
+	width: 100%;
+	height: 50%;
+}
+.future_top p{
+	float: right;
+}
+.future_date{
+	float: left;
+}
+.today_img{
+	width: 0.72rem;
+	height: 0.72rem;
+	float: right;
+}
+.future_date1{
+	float: left;
+}
+.tomorrow_img{
+	width: 0.72rem;
+	height: 0.72rem;
+	float: right;
+}
+#hours{
+	widows: 100%;
+	height: 3.90rem;
+	background-color: #fff;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	margin-top: 0.3rem;
+	display: flex;
+	overflow-x: scroll;
+}
+#hours li{
+	width: 2rem;
+	height: 100%;
+	padding: 0.7rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+	flex-shrink: 0;
+	text-align: center;
+}
+.hours_img{
+	width: 1rem;
+	height: 1rem;
+	padding: 0 .4rem;
+	box-sizing: content-box;	
+}
+.hours_tiem,.hours_temp{
+	font-size: 0.26rem;
+	color: #000;
+}
+#week{
+	width: 100%;
+	height: 11.19rem;
+	background-color: #fff;
+	margin-top:0.27rem; 
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	display: flex;
+	overflow-x: scroll;
+}
+#week li{
+	text-align: center;
+	padding: 0.7rem 0;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	flex-wrap: wrap;
+	flex-shrink: 0;
+
+}
+.week_day{
+	width:2rem;
+	height: 100%;
+}
+.week_day p{
+	font-size: 0.29rem;
+}
+.week_weather{
+	font-size: 0.35rem;
+	margin-top: 0.98rem;
+}
+.week_img{
+	width: 1rem;
+	height: 1rem;
+	box-sizing:content-box;
+	padding: 0 0.4rem;
+	margin-top: 1.16rem;
+}
+.week_hightemp,.week_lowtemp{
+	font-size: 0.26rem;
+}
+.week_hightemp{
+	margin-top: 1.12rem;
+	width:2rem;
+}
+.week_lowtemp{
+	margin-top: 1rem;
+	width:2rem;
+}
+.week_wind{
+	font-size: 0.34rem;
+	margin-top: 1.04rem;
+	color: #000;
+	width:2rem;
+}
+.week_leavel{
+	font-size: 0.36rem;
+	margin-top: 0.7rem;
+}
+/* 如何让滚动条隐藏 */
+#hours::-webkit-scorllbar{
+	display: none;		/* 滚动条消失 */
+	display: block;		/* 滚动条显示 */
+}
+#week::-webkit-scorllbar{
+	display: none;		/* 滚动条消失 */
+	display: block;		/* 滚动条显示 */
+}
+#citys{
+	width: 100vw;
+	height: 100vh;		/* 当前视口宽高  */
+	position: fixed;
+	background-color: pink;
+	left:0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	z-index: 2; 
+
+}
+header{
+	width: 100%;
+	height: 1.29rem;
+	background-color: #fff;
+	padding: 0 0.29rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:center;
+}
+.search{
+	width: 9.03rem; 
+	height: 0.87rem;
+	background-color: #e2e2e2;
+	outline: 0;
+	border-radius: .2rem;
+	padding-top: .1rem;
+}
+.btn{
+	font-size: .42rem;
+	color: #76A9FF;
+}
+.citys_remen{
+	width: 100%;
+	height: 18rem;
+	background-color: #F6F6F6;
+	padding-left: 0.29rem;
+	overflow-y: scroll;
+}
+.citys_remen::-webkit-scorllbar{
+	display: none;		/* 滚动条消失 */
+	display: block;		/* 滚动条显示 */
+}
+.citys_remen_item{
+	height: 2.85rem;
+	width: 8.50rem;
+	padding-top: 0.14rem;
+}
+.citys_remen_top h1{
+	font-size: 0.44rem;
+	color: #999;
+}
+.citys_remen_btm1{
+	width: 100%;
+	height: 2.10rem;
+	overflow: hidden;
+	margin-top: 0.2rem;
+
+}
+.citys_remen_btm{
+	width: 2.34rem;
+	height: 0.84rem;
+	background-color: #fff;
+	border: 0.03rem solid #e4e4e4;
+	border-radius: 0.2rem;
+	margin-top: .2rem;
+	text-align: center;
+	line-height: 0.84rem;
+	float: left;
+	margin: 0 0.39rem  0.39rem 0;
+}
+.citys_guizhou_item{
+	margin-top: 0.56rem;
+	height: 6.90rem;
+	width: 8.50rem;
+	padding-top: 0.14rem;
+}
+
+.citys_guizhou_btm1{
+	width: 100%;
+	height: 5.79rem;
+	overflow: hidden;
+	margin-top: 0.2rem;
+}
+.citys_guizhou_btm{
+	width: 2.34rem;
+	height: 0.84rem;
+	background-color: #fff;
+	border: 0.03rem solid #e4e4e4;
+	border-radius: 0.2rem;
+	margin-top: .2rem;
+	text-align: center;
+	line-height: 0.84rem;
+	float: left;
+	margin: 0 0.39rem  0.39rem 0;
+}
+.citys_guizhou_top h1{
+	font-size: 0.44rem;
+	color: #999;
+}
+.citys_henan_item{
+	margin-top: 0.56rem;
+	height: 6.90rem;
+	width: 8.50rem;
+	padding-top: 0.14rem;
+	overflow: hidden;
+}
+.citys_henan_btm1{
+	width: 100%;
+	height: 5.79rem;
+	overflow: hidden;
+	margin-top: 0.2rem;
+	overflow-y:scroll;
+}
+.citys_henan_btm{
+	width: 2.34rem;
+	height: 0.84rem;
+	background-color: #fff;
+	border: 0.03rem solid #e4e4e4;
+	border-radius: 0.2rem;
+	margin-top: .2rem;
+	text-align: center;
+	line-height: 0.84rem;
+	float: left;
+	margin: 0 0.39rem  0.39rem 0;
+}

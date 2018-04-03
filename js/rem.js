@@ -21,4 +21,3 @@ window.onresize = function(){
    resize(1080,"x"); 
 }
 
-lem是当前元素字体大小
